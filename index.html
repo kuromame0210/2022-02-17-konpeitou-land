@@ -18,9 +18,10 @@
       </div>
       <div id="unity-mobile-warning">
         <h1>konpeitou-land</h1>
-        <h1>Wi-Fi環境推奨。ロードには30秒ほどかかる場合があります</h1>
-        <h1>version 0.3</h1>
+        <h1>Wi-Fi環境推奨。ロードには、毎回30秒ほどかかる場合があります</h1>
+        <h1>version 0.4</h1>
       </div>
+
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
@@ -62,7 +63,7 @@
         mobileWarning.style.display = "block";
         setTimeout(() => {
           mobileWarning.style.display = "none";
-        }, 5000);
+        }, 10000);
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
