@@ -16,9 +16,12 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <h1>konpeitou-land</h1>
-      <h1>Wi-Fi環境推奨。ロードには30秒ほどかかる場合があります</h1>
-      <h1>version 0.1</h1>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+        <h1>konpeitou-land</h1>
+        <h1>Wi-Fi環境推奨。ロードには30秒ほどかかる場合があります</h1>
+        <h1>version 0.1</h1>
+      </div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
@@ -60,7 +63,7 @@
         mobileWarning.style.display = "block";
         setTimeout(() => {
           mobileWarning.style.display = "none";
-        }, 10000);
+        }, 15000);
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
